@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <title>URL Short</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container vertical-center">
         <h1>URL Short</h1>
-        <form action="/shortURL" method="POST" class="my-4 form-inline">
+        <form action="/shortURL" method="POST" class="my-4">
             <label for="url" class="sr-only">URL</label>
-            <input required type="url" name="url" id="url" class="form-control col mr-2" placeholder="URL">
-            <button type="submit" class="btn btn-success">Create</button>
+            <input required type="url" name="url" id="url" class="form-control " placeholder="URL">
+            <button type="submit" class="button btn btn-success">Create</button>
         </form> 
     </div>
+<% if(typeof short == 'object') { short.short } %>
 </body>
 </html>

@@ -1,0 +1,16 @@
+h1 {
+    text-align: center; 
+    padding-top: 15px
+}
+
+button {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: 40%;
+    width: 20%;
+}
+
+input {
+    width: 15%;
+}
